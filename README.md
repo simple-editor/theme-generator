@@ -1,4 +1,3 @@
-# theme-generator
 ![alt text](https://image.ibb.co/nM0cBS/Logo.png "Simple")
 
 Interactive theme generator for simple-editor

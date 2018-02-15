@@ -1,0 +1,10 @@
+{
+  "name": "theme-generator",
+  "version": "1.0.0",
+  "description": "Interactive theme generator for simple-editor Edit",
+  "main": "src/index.js",
+  "repository": "https://github.com/simple-editor/theme-generator.git",
+  "author": "Muhand Jumah <muhandjumah@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
