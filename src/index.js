@@ -2,6 +2,7 @@
 const electron = require('electron');
 const path = require('path');
 const url = require('url');
+const config = require('./config/index');
 
 //Global variables/objects
 const app = electron.app;
@@ -48,7 +49,9 @@ function createWindow(arguments) {
 
   //Enable dev tools, to debug the app
   // TODO: Enable this only if configuraiton (Enviornmental variables) is set to debug mode/development
-  window.webContents.openDevTools();
+  if (config.isDebug) {
+    window.webContents.openDevTools();
+  }
 
   //Garbage collection  if window is closed
   window.on('closed',
