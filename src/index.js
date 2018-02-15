@@ -48,7 +48,6 @@ function createWindow(arguments) {
   }));
 
   //Enable dev tools, to debug the app
-  // TODO: Enable this only if configuraiton (Enviornmental variables) is set to debug mode/development
   if (config.app.isDebug) {
     window.webContents.openDevTools();
   }
