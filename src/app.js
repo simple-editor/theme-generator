@@ -38,7 +38,10 @@ app.on('activate',
 //Utility methods
 //////////////////////////
 function createWindow(arguments) {
-  mainWindow = new BrowserWindow();
+  mainWindow = new BrowserWindow({
+    width: 1024,
+    height: 768
+  });
 
   //Load window
   mainWindow.loadURL(url.format({
