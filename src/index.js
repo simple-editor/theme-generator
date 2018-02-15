@@ -42,7 +42,7 @@ function createWindow(arguments) {
 
   //Load window
   window.loadURL(url.format({
-    pathname: path.join(__dirname, '../static/index.html'),
+    pathname: path.join(__dirname, './app/index.html'),
     protocol: 'file',
     slashes: true
   }));
