@@ -9,7 +9,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 //Let variables
-let window;
+let mainWindow;
 
 //////////////////////////
 //Events handeling
@@ -28,7 +28,7 @@ app.on('window-all-closed',
 
 app.on('activate',
   () => {
-    if (win === null) {
+    if (mainWindow === null) {
       createWindow()
     }
   }
@@ -38,24 +38,24 @@ app.on('activate',
 //Utility methods
 //////////////////////////
 function createWindow(arguments) {
-  window = new BrowserWindow();
+  mainWindow = new BrowserWindow();
 
   //Load window
-  window.loadURL(url.format({
-    pathname: path.join(__dirname, './app/index.html'),
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, './windows/index/index.html'),
     protocol: 'file',
     slashes: true
   }));
 
   //Enable dev tools, to debug the app
   if (config.app.isDebug) {
-    window.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
   }
 
   //Garbage collection  if window is closed
-  window.on('closed',
+  mainWindow.on('closed',
     (arguments) => {
-      window = null;
+      mainWindow = null;
     }
   );
 
