@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="../main.css"/>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css">
     <title>Simple Editor</title>
   </head>
   <body>
-    <!--Scripts-->
-    <script>
-      require('./index.view.js');
-    </script>
-
     <!--Header-->
     <header>
       <h1>Theme generator for simple-editor</h1>
@@ -23,13 +18,27 @@
     </header>
 
     <!--Main content-->
-    <div class="content">
-      
+    <div id="content">
+      <div class="content-wrapper">
+        <fieldset class="group settings">
+          <legend class="fieldTitle">Settings</legend>
+        </fieldset>
+
+        <fieldset class="group theme-configuration">
+          <legend class="fieldTitle">Theme Configurations</legend>
+        </fieldset>
+
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
       <h5>https://github.com/simple-editor/theme-generator.git</h5>
     </footer>
+
+    <!--Scripts-->
+    <script>
+      require('./index.view.js');
+    </script>
   </body>
 </html>

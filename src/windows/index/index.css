@@ -1,0 +1,10 @@
+.group{
+  border: 1px 1px 1px 0px solid;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.fieldTitle{
+  margin-left: 1em;
+  padding: 0.2em 0.8em;
+}
