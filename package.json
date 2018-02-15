@@ -11,7 +11,7 @@
     "electron": "^1.8.2"
   },
   "scripts": {
-    "start": "electron ./src/"
+    "start": "electron ./src/app.js"
   },
   "dependencies": {
     "dotenv": "^5.0.0"
